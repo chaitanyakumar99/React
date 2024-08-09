@@ -2,11 +2,11 @@
 import React from "react";
 
 class Message extends React.Component {
-    // hello() {
-    //     return <div>
-    //         <h1>Hello</h1>
-    //     </div>
-    // }
+    hello() {
+        return <div>
+            <h1>Hello</h1>
+        </div>
+    }
     render(){
         // console.log("first render method");
         return <div>
