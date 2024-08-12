@@ -1,13 +1,14 @@
-import Employee from "./Employee";
-let User=()=>{
-    let uId=101;
-    let uName="Rahul"
-    let loc="chennai"
+import Employee from './Employee'
+let User = () => {
+    let uid = 101
+    let uname = "kk"
+    let location = "hyderabad"
     return <div>
-        <h2>User Component</h2>
+        <h1>User component</h1>
         <hr />
-        <Employee id={uId} name={uName} loc={loc}/>
+        <Employee id={uid} name={uname} loc={location} />
+
     </div>
 }
 
-export default User;
+export default User
