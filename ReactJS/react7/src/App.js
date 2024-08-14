@@ -1,8 +1,11 @@
-import Product from "./Components/Product";
+import Product from "./components/Product"
 let App=()=>{
-    return<>
-           <h1>This is a App component</h1>
-           <Product/>
-         </>
+  return <div>
+    <h1>App  Component</h1>
+    <hr />
+    <Product/>
+    
+  </div>
 }
+
 export default App

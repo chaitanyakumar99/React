@@ -1,28 +1,20 @@
-import { useState ,useEffect } from "react"
+const { useState } = require("react")
 
-let Product=()=>{
-           let[msg, chaithanya]=useState("Hello");
-           let [qty,Siva]=useState("Come to institute")
+let Product = () => {
+    let [msg, state1] = useState("Hi")
+    let [msg1, state2] = useState("Good Morning")
 
-           
-           let gmHandler=()=>{
-            chaithanya("Goodmorning")
-          };
+    let Handeler=()=>{
+      state1("Hello....")
+    }
 
-          // useEffect(()=>{
-          //   console.log("Working");
-          //  },[msg])
-
-          // let gnHandler=
-           return <>
-                    <h1>This is a Product component</h1>
-                    <h2>Message:{msg}</h2>
-                    <button onClick={gmHandler}>GM</button>
-                    <button onClick={()=>{chaithanya("Good night")}
-            }>GN</button>
-               <h1>{qty}</h1>
-          <button onDoubleClick={()=>{Siva("Upgrade the Skills")}}>Clickme</button>
-                  </>
-                  
+    return <div>
+       <h1>Product Componet</h1>
+       <h2>{msg}</h2>
+       <button onClick={Handeler}>GM</button>
+       <h2>{msg1}</h2>
+       <button onDoubleClick={()=>{state2("Good Aternoon")}}>GA</button>
+    </div>
 }
+
 export default Product

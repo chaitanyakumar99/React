@@ -1,3 +1,4 @@
-import reactDOM from 'react-dom'
-import App from './App'
-reactDOM.render(<App/>,document.getElementById('chai'))
+import reactDom from 'react-dom'
+import App from "./App";
+
+reactDom.render(<App/>,document.getElementById("abc"))
