@@ -1,9 +1,9 @@
-import Product from "./components/Product"
+import Message3 from "./components/Message3"
 let App=()=>{
   return <div>
     <h1>App  Component</h1>
     <hr />
-    <Product/>
+    <Message3/>
     
   </div>
 }
