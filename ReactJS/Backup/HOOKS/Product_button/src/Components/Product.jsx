@@ -13,7 +13,7 @@ let Product=()=>{
           //   console.log("Working");
           //  },[msg])
 
-          // let gnHandler=
+          // let gnHandler=g
            return <>
                     <h1>This is a Product component</h1>
                     <h2>Message:{msg}</h2>
