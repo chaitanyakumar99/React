@@ -1,6 +1,7 @@
 import React from "react";
 
 class Message extends React.Component{
+
     state={
         msg:"hello"
     }
@@ -17,6 +18,7 @@ class Message extends React.Component{
         this.setState({msg:"Good night"})
     }
     render(){
+        
         return <div>
             <h1>Messsage Component</h1>
             <h3>{this.state.msg}</h3>
@@ -26,6 +28,7 @@ class Message extends React.Component{
             <button onClick={this.gnhandeler}>GN</button>
         </div>
     }
+
 }
 
 export default Message
