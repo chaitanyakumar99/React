@@ -1,4 +1,4 @@
-import reactDom from 'react-dom'
+import ReactDom from "react-dom";
 import App from "./App";
 
-reactDom.render(<App/>,document.getElementById("abc"))
+ReactDom.render(<App/>,document.getElementById("abc"))

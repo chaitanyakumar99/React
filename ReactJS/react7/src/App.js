@@ -1,12 +1,16 @@
-import Message3 from "./components/Message3"
+import React from 'react'
+import Emp from './e1/Emp'
 
-let App=()=>{
+let App = () => {
   return <div>
+
     <h1>App  Component...</h1>
     <hr />
-    <Message3/>
-    
+    <Emp/>
+
   </div>
+
 }
 
 export default App 
+
