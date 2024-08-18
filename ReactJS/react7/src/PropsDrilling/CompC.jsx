@@ -6,7 +6,7 @@ const CompC = (props) => {
         <h1>CompC</h1>
         <pre>{JSON.stringify(props)}</pre>
         <hr />
-        <CompD ename={props.ename}/>
+        <CompD ename={props.name}/>
     </div>
   )
 }
