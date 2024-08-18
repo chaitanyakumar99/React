@@ -8,7 +8,7 @@ import CompoentC from './ComponentC'
         <h1>Component B</h1>
         <pre>{JSON.stringify(this.props)}</pre>
         <hr />
-        <CompoentC/>
+        <CompoentC  emp_data={this.props.emp_data1}/>
         </div>
     )
   }

@@ -5,6 +5,7 @@ import React, { Component } from 'react'
     return (
       <div>
         <h1>Component D</h1>
+        <pre>{JSON.stringify(this.props)}</pre>
         <hr />
         </div>
     )

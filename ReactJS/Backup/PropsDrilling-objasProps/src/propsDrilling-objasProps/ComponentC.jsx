@@ -6,8 +6,9 @@ import ComponentD from './ComponentD'
     return (
       <div>
         <h1>Component C</h1>
+        <pre>{JSON.stringify(this.props)}</pre>
         <hr />
-        <ComponentD/>
+        <ComponentD emp_data={this.props.emp_data}/>
         </div>
     )
   }

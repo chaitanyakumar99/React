@@ -12,7 +12,7 @@ class ComponentA extends Component {
       <div>
         <h1>Component A</h1>
         <hr />
-        <ComponentB emp_data={this.emp}/>
+        <ComponentB emp_data1={this.emp}/>
       </div>
     )
   }
