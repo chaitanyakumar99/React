@@ -1,4 +1,4 @@
-import ComponetA from './PropsDrilling/CompA'
+import ComponetA from './PropsDrilling-Array/CompA'
 
 let App=()=>{
 
