@@ -1,16 +1,11 @@
-import React from 'react'
-import Emp from './e1/Emp'
+import ComponetA from './PropsDrilling/CompA'
 
-let App = () => {
+let App=()=>{
+
   return <div>
-
-    <h1>App  Component...</h1>
+    <h1>App Component</h1>
     <hr />
-    <Emp/>
-
+    <ComponetA/>
   </div>
-
 }
-
-export default App 
-
+export default App
