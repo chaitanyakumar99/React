@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CompC from './CompC'
 
  class CompB extends Component {
   render() {
@@ -6,6 +7,8 @@ import React, { Component } from 'react'
       <div>
         <h1>CompB</h1>
         <pre>{JSON.stringify(this.props)}</pre>
+        <hr />
+        <CompC eloc={this.props.eloc}/>
       </div>
     )
   }
