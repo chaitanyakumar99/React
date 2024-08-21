@@ -1,11 +1,8 @@
-import ComponetA from './Message/Message'
-
+import Login from "./Login/Login"
 let App=()=>{
+return <div>
+    <Login/>
 
-  return <div>
-    <h1>App Component</h1>
-    <hr />
-    <ComponetA/>
-  </div>
+</div>
 }
 export default App
