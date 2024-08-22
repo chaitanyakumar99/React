@@ -1,4 +1,4 @@
-import ComponetA from './EveningBinding/Products'
+import ComponetA from './User/User'
 
 let App=()=>{
 
