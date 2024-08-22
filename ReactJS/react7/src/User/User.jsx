@@ -7,7 +7,7 @@ class User extends Component {
     componentDidMount(){
       Axios.get('https://jsonplaceholder.typicode.com/users')
       .then((resp)=>{
-        console.log(resp);
+        this.setState({User:resp.data})
       })
       .catch()
     }
@@ -26,6 +26,18 @@ class User extends Component {
               <th>Email</th>
             </tr>
           </thead>
+          <tbody>
+            {
+              this.state.users.map((User)=>{
+                return <tr key={User.id}>
+                  <td>{User.id}</td>
+                  <td>{User.name}</td>
+                  <td>{User.email}</td>
+
+                </tr>
+              })
+            }
+          </tbody>
          </table>
 
          </> : <h3>No Data</h3>
