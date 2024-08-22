@@ -1,4 +1,4 @@
-import User from "./Login/Signin"
+import User from "./User/User"
 
 let App=()=>{
 return <div>
