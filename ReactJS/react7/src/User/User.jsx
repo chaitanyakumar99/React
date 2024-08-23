@@ -1,13 +1,13 @@
-import React, { Component, Fragment } from 'react'
+import react from 'react'
 import Axios from 'axios'
-class User extends Component {
+class User extends react.Component {
     state={
         users:[]
     }
     componentDidMount(){
       Axios.get('https://jsonplaceholder.typicode.com/users')
       .then((resp)=>{
-        this.setState({User:resp.data})
+        this.setState({users:resp.data})
       })
       .catch()
     }
@@ -18,7 +18,7 @@ class User extends Component {
         <pre>{JSON.stringify(this.state.users)}</pre>
         {
          this.state.users.length > 0 ?  <>
-         <table>
+         <table border={2}>
           <thead>
             <tr>
               <th>Id</th>
