@@ -1,4 +1,4 @@
-import User from './User/User'
+import User from './Navbar/Navbar'
 
 let App = () => {
     return <div>
