@@ -1,9 +1,17 @@
-import User from './Navbar/Navbar'
+import React from 'react'
+import { useEffect } from 'react'
 
-let App = () => {
-    return <div>
-        <User />
-        <hr />
+const App = () => {
+    let[state,setState]=useState({})
+
+    useEffect(()=>{
+        console.log("After return statement");
+    },[])
+  return (
+    <div>
+        <h3>App component</h3>
     </div>
+  )
 }
+
 export default App
