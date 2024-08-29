@@ -14,9 +14,14 @@ const App = () => {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        {/* <Route path='users' element={<User/>}/> */}
+        <Route path='users' element={<User/>}/>
         <Route path='home' element={<Home/>}/>
         <Route path='about' element={<About/>}/>
+        <Route path='services' element={<Services/>}/>
+        <Route path='contact' element={<Contact/>}/>
+        <Route path='about' element={<About/>}/>
+        <Route path='registraction' element={<Registraction/>}/>
+        <Route path='sigin' element={<SignIn/>}/>
       </Routes>
 
     </BrowserRouter>
