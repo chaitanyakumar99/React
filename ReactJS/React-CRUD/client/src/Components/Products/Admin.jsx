@@ -1,10 +1,13 @@
-import React from 'react'
+import Axios from 'axios'
+import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 const Admin = () => {
+  let[products,setProduct]=useState([])
+  
   return (
     <div>
         <h2>Admin Component</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque veritatis, deserunt doloribus quo sit officiis ipsam nobis recusandae fugiat! Animi illum commodi quo!</p>
     </div>
   )
 }
