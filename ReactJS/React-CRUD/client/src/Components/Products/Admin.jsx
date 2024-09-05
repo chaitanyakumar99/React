@@ -1,8 +1,9 @@
 import Axios from 'axios'
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 const Admin = () => {
+
   let[products,setProduct]=useState([])
   
   return (
@@ -10,6 +11,7 @@ const Admin = () => {
         <h2>Admin Component</h2>
     </div>
   )
+
 }
 
 export default Admin
