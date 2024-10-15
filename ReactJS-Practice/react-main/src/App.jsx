@@ -1,14 +1,8 @@
-import Navbar from "./Navbar/Navbar"
+import Navbar from "./Navbar/Navbar";
 
-let App=()=>{
-return <div>
-    <Navbar/>
-    <Navbar/>
-    <Navbar/>
-    <h1>Good Morning</h1>
-    <h1>Good Morning</h1>
-    <h1>Good Morning</h1>
-    <h1>Good Morning</h1>
-</div>
+let App = () => {
+    return <div>
+        <Navbar />
+    </div>
 }
 export default App
