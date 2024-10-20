@@ -1,11 +1,15 @@
-import Navbar from "./Navbar/Navbar";
-import './assets/css/airbus.css'
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Message from './Message/Message'
 
-let App = () => {
-
-    return <div>
-        <Navbar />
-    </div>
+const App = () => {
+    return (
+        <div>
+            <Navbar />
+            <Message />
+            
+        </div>
+    )
 }
 
 export default App
