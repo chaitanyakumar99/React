@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from './Navbar/Navbar'
-import ComponentA from './Components/ComponentA'
+import User from "./propsEx/User";
 
 let App=()=>{
   return <div>
      <Navbar/>
      <h2>App component</h2>
      <hr />
-     <ComponentA/>
+     <User/>
    </div>
 }
 
