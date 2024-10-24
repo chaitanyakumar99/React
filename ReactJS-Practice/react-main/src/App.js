@@ -1,15 +1,14 @@
-import React from "react"
-import Navbar from "./Navbar/Navbar"
-import CompA from "./Components/ComponentA"
-let App = () => {
-    return <div>
-        <Navbar />
-        <h2>App Component</h2>
-        <hr />
-        <CompA/>
+import React from "react";
+import Navbar from './Navbar/Navbar'
+import ComponentA from './Components/ComponentA'
 
-        
-    </div>
+let App=()=>{
+  return <div>
+     <Navbar/>
+     <h2>App component</h2>
+     <hr />
+     <ComponentA/>
+   </div>
 }
 
 export default App
