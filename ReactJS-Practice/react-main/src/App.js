@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from './Navbar/Navbar'
-import User from "./propsEx/User";
+import Message from "./Message";
 
-let App=()=>{
+let App = () => {
   return <div>
-     <Navbar/>
-     <h2>App component</h2>
-     <hr />
-     <User/>
-   </div>
+    <Navbar />
+    <h2>App component</h2>
+    <hr />
+    <Message/>
+  </div>
 }
 
 export default App
