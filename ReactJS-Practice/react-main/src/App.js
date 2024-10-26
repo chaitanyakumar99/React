@@ -4,7 +4,9 @@ import Message from "./Message";
 
 let App = () => {
   return <div>
+    
     <Navbar />
+
     <h2>App component</h2>
     <hr />
     <Message/>
