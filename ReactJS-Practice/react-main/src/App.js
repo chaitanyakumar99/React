@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from './Navbar/Navbar'
 import Message from "./Message";
-
+import Counter from "./Counter";
 let App = () => {
   return <div>
     
@@ -9,7 +9,7 @@ let App = () => {
 
     <h2>App component</h2>
     <hr />
-    <Message/>
+    <Counter/>
   </div>
 }
 
