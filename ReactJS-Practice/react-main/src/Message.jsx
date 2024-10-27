@@ -2,9 +2,17 @@ import React from 'react'
 
 class Message extends React.Component {
   msg = "Hello"
-  changeMessage() {
-    console.log("Txt case ")
+  gmHandler=()=> {
+    console.log("Txt case")
     this.msg = "Good morning"
+    console.log(this.msg)
+    this.forceUpdate()
+  }
+
+  gnHandler = () => {
+    this.msg = "Good Night"
+    this.forceUpdate()
+
   }
   render() {
     return <div>
@@ -12,8 +20,8 @@ class Message extends React.Component {
       <hr />
       <h2>Message:{this.msg}</h2>
       <hr />
-      <button onClick={this.changeMessage()}>GM</button>
-      <button>GN</button>
+      <button onClick={this.gmHandler}>GM</button>
+      <button onClick={this.gnHandler}>GN</button>
     </div>
   }
 
