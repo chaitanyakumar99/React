@@ -1,15 +1,16 @@
-import React from "react";
-import Navbar from './Navbar/Navbar'
-import Counter from "./Counter";
-let App = () => {
-  return <div>
-    
-    <Navbar />
+import React from 'react'
+import ComponentA from './components/ComponentA'
 
-    <h2>App component</h2>
-    <hr />
-    <Counter/>
-  </div>
+
+const App = () => {
+  return (
+    <div>
+      <h1>App Component</h1>
+      <hr />
+      <ComponentA/>
+      <hr />
+    </div>
+  )
 }
 
 export default App
