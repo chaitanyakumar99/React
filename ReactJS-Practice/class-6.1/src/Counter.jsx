@@ -2,6 +2,7 @@ import React from "react";
 
 class Counter extends React.Component {
    // counter = 1
+   
     state={
         counter:1
     }
