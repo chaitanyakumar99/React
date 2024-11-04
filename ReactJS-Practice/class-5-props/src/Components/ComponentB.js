@@ -1,6 +1,8 @@
 function CompB(props) {
     return <div>
-        <h2>Component B</h2>
+
+        <h2>Component B...!</h2>
+
         <h3>{JSON.stringify(props)}</h3>
         <hr />
         <h3>Employee Id:{props.emp_id}</h3>
