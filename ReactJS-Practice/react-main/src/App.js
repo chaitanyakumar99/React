@@ -1,14 +1,11 @@
 import React from 'react'
-import ComponentA from './components/ComponentA'
-
+import ComponentA from './Components/ComponentA'
 
 const App = () => {
   return (
     <div>
-      <h1>App Component</h1>
-      <hr />
-      <ComponentA/>
-      <hr />
+        <h1>App Component</h1>
+        <ComponentA/>
     </div>
   )
 }
