@@ -1,11 +1,11 @@
 import React from 'react'
-import Message from './Components/Message'
+import Counter from './Components/Counter'
 const App = () => {
   return (
     <div>
         <h1>App Component</h1>
         <hr />
-        <Message/>
+        <Counter/>
     </div>
   )
 }
