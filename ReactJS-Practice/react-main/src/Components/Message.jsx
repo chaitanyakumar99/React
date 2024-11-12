@@ -6,6 +6,10 @@ class Message extends Component {
         this.msg = "Good Morning"
         this.forceUpdate()
     }
+    gnHandeler=()=>{
+        this.msg="Good Night"
+        this.forceUpdate()
+    }
     render() {
         return (
             <div>
@@ -14,6 +18,7 @@ class Message extends Component {
                 <hr />
                 <h1>{this.msg}</h1>
                 <button onClick={this.gmHandeler}>Gm</button>
+                <button onClick={this.gnHandeler}>Gn</button>
             </div>
 
         )
