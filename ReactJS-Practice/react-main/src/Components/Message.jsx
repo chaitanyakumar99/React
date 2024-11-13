@@ -1,25 +1,32 @@
-import React,{useState} from "react";
+import React, { Component } from 'react'
 
-
-const Message =()=>{
-    let [msg,setMsg]=useState("Hello")
-    let GmHandeler=()=>{
-       setMsg("Good Morning")
+class Message extends Component {
+    // state;
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         message: "Hello"
+    //     }
+    // }
+    state={
+        message:"Hello"
     }
-    let GnHandeler=()=>{
-        setMsg("Good Night")
+    updateHandeler = (value) => {
+        this.setState({
+            message:value
+        })
     }
-
-    return <div>
-        <h2>Message functional Component</h2>
-        <hr />
-        <h3>Message:{msg}</h3>
-
-        <button onClick={GmHandeler}>GM</button>
-        <button onClick={GnHandeler}>GN</button>
-
-
-    </div>
+    render() {
+        return (
+            <div>
+                <h2>Message Component</h2>
+                <h2>Message Value:{this.state.message}</h2>
+                <button onClick={this.updateHandeler.bind(this,"Good Morning")}>GM</button>
+                <button onClick={this.updateHandeler.bind(this,"Good Afternoon")}>GA</button>
+                <button onClick={this.updateHandeler.bind(this,"Good Night")}>GN</button>
+            </div>
+        )
+    }
 }
 
 export default Message
