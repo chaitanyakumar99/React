@@ -1,26 +1,22 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-class Counter extends Component {
-    state = {
-        counter: 1
+const Counter = () => {
+    const [count, setCount] = useState(0)
+    const IncrHamdeler = () => {
+        setCount(count + 1)
     }
-    IncrHandeler = () => {
-        this.setState({ counter: this.state.counter + 1 })
+    const DecrHandeler=()=>{
+        setCount(count -1)
     }
-    DecrHandeler=()=>{
-        this.setState({counter:this.state.counter -1})
-    }
-    render() {
-        return (
-            <div>
-                <h2>Counter Component</h2>
-                <hr />
-                <h3>Counter Value:{this.state.counter}</h3>
-                <button onClick={this.IncrHandeler}>Inc</button>
-                <button onClick={this.DecrHandeler}>Decr</button>
-            </div>
-        )
-    }
+    return (
+        <div>
+            <h2>Counter Example </h2>
+            <h3>Count Value:{count}</h3>
+            <button onClick={IncrHamdeler}>Incr</button>
+            <button onClick={DecrHandeler}>Decr</button>
+        </div>
+
+    )
 }
 
 export default Counter
