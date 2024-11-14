@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Message extends Component {
+    
     // state;
     // constructor(props) {
     //     super(props)
@@ -8,6 +9,7 @@ class Message extends Component {
     //         message: "Hello"
     //     }
     // }
+
     state={
         message:"Hello"
     }
