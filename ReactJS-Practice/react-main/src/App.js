@@ -1,11 +1,13 @@
 import React from 'react'
-import Message from './Components/Message'
+import ReactComponent from './ReactComponent'
+// import Message from './Message'
 const App = () => {
   return (
     <div>
       <h1>App Component</h1>
       <hr/>
-      <Message/>
+     <ReactComponent/>
+     {/* <Message/> */}
     </div>
   )
 }
