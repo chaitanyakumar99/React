@@ -1,10 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import RandomColorPicker from './ReactComponent';
+import React from "react";
 
-const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+class Message extends React.Component {
+  //msg="Hello"
 
-ReactDOM.render(
-  <RandomColorPicker colors={colors} />,
-  document.getElementById('root')
-);
+  state={
+    msg:"Hello"
+  }
+
+  gmHandeler=()=>{
+   this.setState({
+    msg:"Good Morning"
+   })
+  }
+
+  gnHandeler=()=>{
+    this.setState({
+      msg:"Good Night"
+    })
+  }
+
+  render() {
+    //console.log("Render method")
+    return <div>
+      <h2>Message Component</h2>
+      <hr />
+      <h2>Message:{this.state.msg}</h2>
+      <button onClick={this.gmHandeler}>GM</button>
+      <button onClick={this.gnHandeler}>GN</button>
+    </div>
+  }
+}
+
+export default Message 
