@@ -1,11 +1,13 @@
 import React from "react";
-import Counter from "./Counter";
+import Product from "./Product";
+// import Counter from "./Counter";
 let App = () => {
   return <div>
-
-    <h2>App component</h2>
+    
+    <h2>React State Example</h2>
     <hr />
-    <Counter/>
+    {/* <Counter/> */}
+    <Product/>
   </div>
 }
 
