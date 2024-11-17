@@ -11,7 +11,7 @@ let Message = () => {
         <button onClick={updateHandeler.bind(null,"Good morning") }>GM</button>
         <button onClick={updateHandeler.bind(null,"Good Aternoon")}>GA</button>
         <button onClick={updateHandeler.bind(null,"Good Evenning")}>GE</button>
-        <button onClick={updateHandeler.bind(null,"Good Night")}>GN</button>
+        <button onClick={()=>{SetMessage("Good Night") }}>GN</button>
     </div>
 }
 
