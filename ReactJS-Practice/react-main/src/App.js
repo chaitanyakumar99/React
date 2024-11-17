@@ -1,5 +1,5 @@
 import React from "react";
-import Message from "./Message/Message";
+import Message from "./Message/Message-fun";
 let App = () => {
   return <div>
     
