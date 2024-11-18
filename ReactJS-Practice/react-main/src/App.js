@@ -1,12 +1,12 @@
 import React from "react";
-import Message from "./Message/Message-count";
+import User from "./Userlist/User";
 let App = () => {
   return <div>
-    
+
     <h2>App Component</h2>
     <hr />
-    <Message/>
+    <User />
   </div>
 }
 
-export default App
+export default App 
