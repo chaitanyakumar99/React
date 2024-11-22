@@ -19,7 +19,7 @@ class Users extends Component {
     }
     render() {
         return (
-            <div>
+            <div>  
                 <pre>{JSON.stringify(this.state.users)}</pre>
                 <h2>User Component </h2>
                 <button onClick={this.getUserData}>Get User Data</button>
@@ -28,7 +28,7 @@ class Users extends Component {
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Namre</th>
+                            <th>Name</th>
                             <th>Email</th>
                         </tr>
                         <tbody>
