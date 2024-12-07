@@ -29,14 +29,26 @@ class Users extends Component {
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Email</th> 
+                            <th>Email</th>
                         </tr>
                     </thead>
                     <tbody>
-                      {
-                        this.state.users.length >0 ? <div></div>:<div><h3>No Data</h3></div>
-                      }
-                    </tbody> 
+                        {
+                            this.state.users.length > 0 ? <React.Fragment>
+                                {
+                                    this.state.users.map((user) => {
+                                        return <tr>
+                                            <td>{user.id}</td>
+                                            <td>{user.name}</td>
+                                            <td>{user.email}</td>
+                                        </tr>
+
+                                    })
+                                }
+                            </React.Fragment> : <div><h4 style={{ color: 'red' }}>No Data</h4></div>
+
+                        }
+                    </tbody>
                 </table>
             </div>
         )
