@@ -1,9 +1,9 @@
 import React from "react";
-import User from './User/Users'
+import Message from "./Message/Message";
 
 let App = () => {
   return <div>
-     <User />
+     <Message />
   </div>
 }
 
